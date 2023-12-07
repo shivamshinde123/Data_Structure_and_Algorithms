@@ -87,9 +87,60 @@ class LinkedList:
             print(temp.get_data())
             temp = temp.get_next() #############DOES THIS GIVE NEXT NODE OR ADDRESS OF THE NEXT NODE####################
 
-    
+    def delete(self, data):
 
-        
+        """This method is used to delete the node with data data"""
+        node = self.find_node(data)
+
+        if (node is not None):
+            if (node == self.__head):
+                if (self.__head == self.__tail):
+                    self.__tail = None
+                self.__head = node.get_next()
+            else:
+                temp = self.__head
+                while(temp is not None):
+                    if (temp.get_next() == node):
+                        temp.set_next(node.get_next())
+                        if (node == self.__tail):
+                            self.__tail = temp
+                        node.set_next(None)
+                        break
+                    temp = temp.get_next()
+        else:
+            print(f"{data} is not present in Linked List")
+
+    
+    def __str__(self):
+        temp = self.__head
+        msg = []
+        while (temp is not None):
+            msg.append(str(temp.get_data()))
+            temp = temp.get_next()
+
+        msg = ", ".join(msg)
+        msg = f"Linked List data (Head to Tail): [{msg}]"
+        return msg
+
+
+
+
+if __name__ == "__main__":
+
+    marias_list = LinkedList()
+    marias_list.add('Sugar')
+    print(f"Maria's list after adding Sugar {marias_list}\n")
+
+    marias_list.add('Tea Bags')
+    marias_list.add('Milk')
+    marias_list.add('Biscuit')
+    print(f"Maria's list after adding three more items: {marias_list}\n")
+
+    marias_list.insert('Salt', 'Sugar') 
+    print(f"Maria's list after adding 'Salt' after 'Sugar': {marias_list}")
+
+    marias_list.delete('Milk')
+    print(f"Maria's list after deleting Milk: {marias_list}")
 
  
 
