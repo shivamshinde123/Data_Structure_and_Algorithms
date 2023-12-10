@@ -1,21 +1,13 @@
 
-
 def insertion_sort(elements):
-
-    if len(elements) == 0:
-        print("No elements present in the provided array. So returning an empty array as output:")
-        return elements
-    elif len(elements) == 1:
-        return elements
-    else:
-        for i in range(1, len(elements)):
-            anchor = elements[i]
-            j = i - 1
-            while (j>=0 and elements[j] > anchor):
-                elements[j+1] = elements[j]
-                j -= 1
-            elements[j + 1] = anchor
-        return elements
+    for i in range(1, len(elements)):
+        anchor = elements[i]
+        j = i - 1
+        while (j>=0 and elements[j] > anchor):
+            elements[j+1] = elements[j]
+            j -= 1
+        elements[j + 1] = anchor
+    return elements
 
 
 if __name__ == "__main__":
