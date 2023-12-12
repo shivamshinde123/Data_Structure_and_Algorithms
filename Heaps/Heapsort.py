@@ -7,7 +7,13 @@ def build_heapsort(A):
 
     """This function will sort the elements of an array using heap data structure properties.
     Note that in order for heapsort to work, the arr should follow heap properties i.e. max-heap in this case
+    
+    - Keyword arguments:
+        - A -- array
+
+    Return: A array after sorting
     """
+    
 
     n = len(A)
     for i in range(n-1, 0, -1):

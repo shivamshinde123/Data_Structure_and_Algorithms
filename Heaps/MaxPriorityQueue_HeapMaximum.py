@@ -3,7 +3,14 @@
 
 def heap_maximum(A):
 
-    """This function returns the element of priority queue with the largest key (This function is for the max-priority queue)"""
+    """This function returns the element of priority queue with the largest key (This function is for the max-priority queue)
+    
+    - Keyword arguments:
+        - A -- array
+        
+    Return: largest key in the given array
+    """
+    
 
     return A[0]
 

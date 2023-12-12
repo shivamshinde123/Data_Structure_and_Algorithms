@@ -10,6 +10,7 @@ def max_heap_insert(A, key):
     - Keyword arguments:
         - A -- max-priority queue into which we want to add new key
         - key -- key that we want to add into max-priority key
+        
     Return: updated max-priority queue
     """
 

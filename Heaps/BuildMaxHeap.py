@@ -3,7 +3,14 @@ from MaxHeapify import max_heapify
 
 def build_max_heap(A):
 
-    """This function is used to create a max heap out of the given array"""
+    """This function is used to create a max heap out of the given array
+    
+    - Keyword arguments:
+        - A -- array
+
+    Return: A array after heapification
+    """
+    
 
     n = len(A) ## we want the heap to have n heap-size
     for i in range(n//2 - 1, -1, -1):

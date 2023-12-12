@@ -9,6 +9,8 @@ def heap_increase_key(A, i, key):
         - A -- Array
         - i -- index of the key which we want to change
         - key -- new value of the key
+
+    Return: A array after transformation
     """
     
     if key < A[i]:

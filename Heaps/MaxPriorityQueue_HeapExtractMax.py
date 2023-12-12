@@ -3,7 +3,14 @@ from MaxHeapify import max_heapify
 
 def heap_extract_max(A):
 
-    """This function removes and returns the element of max-priority queue with the largest key"""
+    """This function removes and returns the element of max-priority queue with the largest key
+    
+    - Keyword arguments:
+        - A -- Array
+        
+    Return: element with the largest key in max-priority queue
+    """
+    
 
     n = len(A)
 
