@@ -154,7 +154,7 @@ if __name__ == '__main__':
     # Get the value for a key 
     print(ht.search("banana"))  # 2 
   
-    # Update the value for a key 
+    # add the value for a key 
     ht.insert("strawberry", 4) 
     print(ht.search("banana"))  # 4 
   
