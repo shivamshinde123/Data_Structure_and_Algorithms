@@ -17,6 +17,8 @@ def pop(stack):
         else:
             top = len(stack) - 1
 
+        return element
+
 if __name__ == "__main__":
     stack=[]
     top=None
@@ -24,6 +26,6 @@ if __name__ == "__main__":
     push(stack,2)
     push(stack,3)
     push(stack,4)
-    pop(stack)
-    pop(stack)
+    a = pop(stack)
+    b = pop(stack)
     print(stack)
