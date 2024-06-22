@@ -5,7 +5,7 @@
 class Middle:
     def middleNode(self, head):
         
-        # The length of the linked list is needed
+        # The length of the linked list is needed (Approach 1)
 #         def get_node(index):
 #             current = head
 #             for _ in range(index):
@@ -26,7 +26,7 @@ class Middle:
 #         else:
 #             return get_node(length // 2)
         
-        # Without calculating the length of the linked list (tortoise and hare algorithm or slow and fast pointer approach)
+        # Without calculating the length of the linked list (tortoise and hare algorithm or slow and fast pointer approach) (Approach 2)
         slow = head
         fast = head
         while fast and fast.next:
